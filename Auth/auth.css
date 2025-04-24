@@ -7,6 +7,7 @@
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Begginning Of  Header */
@@ -64,12 +65,67 @@ header {
   height: 100%;
   padding-left: 5%;
 }
+
+.language{
+position: relative;
+}
+
+.language:hover .dropB{
+  display: block;
+  }
 .others a {
   width: 15em;
 }
 
 .cur {
   width: 7em;
+  position: relative;
+
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  height: 150%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: -150%;
+  display: none;
+  list-style: none;
+  background-color: black;
+  z-index: 9999;
+}
+.dropB {
+  display: flex;
+  flex-direction: column;
+  height: 150%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: -150%;
+  display: none;
+  list-style: none;
+  background-color: black;
+  z-index: 9999;
+}
+.drop li, .drop a{
+  width: 100%;
+}
+
+.dropB li, .dropB a{
+  width: 100%;
+}
+
+
+.cur:hover .drop {
+  display: block;
 }
 
 .language {
@@ -84,6 +140,8 @@ header {
   color: sandybrown;
 }
 
+
+
 nav ul {
   display: flex;
   list-style: none;
@@ -96,7 +154,7 @@ nav ul li,
 nav ul li a {
   color: black;
   font-size: 1.1rem;
-  width: 5.555em;
+  width: 5.9em;
   padding: 3%;
   /* background-color: blue; */
   text-transform: uppercase;
@@ -142,7 +200,7 @@ nav ul li a:hover {
   position: absolute;
   left: 85%;
   bottom: 45%;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .cart {
@@ -176,7 +234,7 @@ nav ul li a:hover {
 /* Header End */
 
 .auth_container {
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,8 +242,10 @@ nav ul li a:hover {
 }
 
 .login {
+  position: relative;
   display: flex;
   width: 75%;
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -253,6 +313,10 @@ nav ul li a:hover {
   font-size: 1.25em;
 
   /* text-align: center; */
+}
+
+.login_1 button:hover {
+transform: scale(1.05);
 }
 
 .forgot_password {
@@ -342,6 +406,8 @@ nav ul li a:hover {
 }
 
 .footer2 {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   height: 20px;
   display: flex;
@@ -349,6 +415,7 @@ nav ul li a:hover {
   align-items: center;
   padding: 1.3% 15%;
   background: rgb(53, 52, 52);
+  z-index: 1000;
 }
 
 .footer2 p {
@@ -378,16 +445,51 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.login1_overlay {
-  position: absolute;
-  flex-direction: column;
-  border-bottom-left-radius: inherit;
-  border-top-left-radius: inherit;
+.login_overlay {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../images/overflow_A.jpg);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: contain;
+  width: 50%;
   height: 100%;
-  width: 100%;
-  z-index: 10;
-  background-color: blue;
+  z-index: 2;
+  border-top-right-radius: 1.45em;
+  border-bottom-right-radius: 1.45em;
+}
+
+.login_overlay .signA {
+  padding: 2% 4%;
+  background-color: rgba(17, 100, 100, 0.363);
+  font-size: 1.52em;
+  width: 35%;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  /* position: relative; */
+  top: -50%;
+  z-index: 100;
+}
+
+.login_overlay .signA:hover {
+  transform: scale(0.9);
+}
+
+.login_overlay .signB {
+  display: none;
+  padding: 2% 4%;
+  background-color: rgba(17, 100, 100, 0.363);
+  font-size: 1.52em;
+  width: 35%;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  /* position: relative; */
+  top: -50%;
+  z-index: 100;
 }
