@@ -213,6 +213,7 @@ nav ul li a:hover {
   height: 50px;
   border-radius: 50%;
   padding: auto;
+  cursor: pointer;
 }
 
 .cart:hover {
@@ -328,6 +329,10 @@ transform: scale(1.05);
 .reset {
   color: olive;
   font-size: 1.25em;
+}
+
+.reset:hover {
+  transform: scale3d(1.1, 1.1, 1);
 }
 .login .login_2 {
   position: relative;
@@ -492,4 +497,7 @@ transform: scale(1.05);
   /* position: relative; */
   top: -50%;
   z-index: 100;
+}
+.login_overlay .signB:hover {
+  transform: scale(0.9);
 }

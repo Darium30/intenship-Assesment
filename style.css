@@ -9,10 +9,12 @@ a {
 }
 /* Begginning Of  Header */
 header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;
+  z-index: 1000;
 }
 
 .header_1 {
@@ -228,6 +230,126 @@ nav ul li a:hover {
 }
 
 /* Header End */
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .section_1_items {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2% 5%;
+  }
+  .section_3_items .sec3_items {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 0 5%;
+  }
+  .converse_legacy {
+    width: 100%;
+    padding: 1em;
+  }
+  .section_6 .offers {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  footer .footer1 {
+    flex-direction: column;
+    padding: 2% 5%;
+    gap: 2em;
+  }
+  .footer2 {
+    flex-direction: column;
+    padding: 1em 5%;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_1, .header_2 {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5em 1em;
+  }
+  .others {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li,
+  nav ul li a {
+    width: 100%;
+    padding: 1em 0;
+  }
+  .search_cart {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+  .section_1_items {
+    grid-template-columns: 1fr;
+    padding: 1em 2em;
+  }
+  .section_3_items .sec3_items {
+    grid-template-columns: 1fr;
+    padding: 1em 2em;
+  }
+  .section_6 .offers {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .converse_legacy {
+    width: 100%;
+    padding: 1em;
+  }
+  footer .footer1 {
+    padding: 1em 2em;
+  }
+  .footer2 {
+    padding: 1em 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_1 p.address {
+    font-size: 0.75rem;
+  }
+  .others a,
+  .cur,
+  .language {
+    font-size: 0.75rem;
+    padding-left: 2%;
+  }
+  .section_1_items,
+  .section_3_items .sec3_items {
+    padding: 0 1em;
+  }
+  .section_1_items .items1,
+  .section_1_items .items2,
+  .section_1_items .items3,
+  .section_1_items .items4,
+  .section_1_items .items5,
+  .section_1_items .items6,
+  .section_1_items .items7,
+  .section_1_items .items8,
+  .section_3_items .sec3_items .item1,
+  .section_3_items .sec3_items .item2,
+  .section_3_items .sec3_items .item3,
+  .section_3_items .sec3_items .item4 {
+    width: 100%;
+    height: auto;
+  }
+  .section_6 .offers .offer {
+    font-size: 0.9rem;
+  }
+  footer .footer1 {
+    padding: 1em 1em;
+    gap: 1em;
+  }
+  .footer2 {
+    padding: 1em 1em;
+  }
+}
 
 /* section_1 start */
 
