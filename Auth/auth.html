@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="auth.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_1">
+        <div class="address">
+          <p>
+            60 West 34th Street, 15th floor, Wuse 2, Abuja - Hotline:
+            0804-377-3580 - 0804-399-3580
+          </p>
+        </div>
+        <div class="others">
+          <a href="#">LOGIN OR REGISTER</a>
+          <div class="cur">
+            <p>USD</p>
+            <i class="fa-solid fa-angle-down fa-xs" style="color: #000000"></i>
+          </div>
+          <div class="language">
+            <p>LANGUAGE</p>
+            <i class="fa-solid fa-angle-down fa-xs" style="color: #000000"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_2">
+        <img src="../images/logo.png" alt="logo" style="width: 10%" />
+
+        <nav>
+          <ul>
+            <li><a href="auth.html">Home</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="search_cart">
+          <div class="search">
+            <input type="text" placeholder="Search Product" />
+            <i
+              class="fa-solid fa-magnifying-glass fa-sm search_key"
+              style="color: #000000b6"
+            ></i>
+          </div>
+          <div class="cart">
+            <i
+              class="fa-solid fa-cart-shopping fa-lg cart_logo"
+              style="color: #ffffff"
+            ></i>
+            <h4>0</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="auth_container">
+      <div class="login">
+        <div class="login_1">
+          <div class="login1_overlay">
+              <p>Sign In</p>
+              <i
+              class="fa-solid fa-arrow-right fa-lg arrow-right"
+              style="color: #ffffff"
+            ></i>
+          </div>
+          <p>User Login</p>
+          <form action="">
+            <div class="info">
+              <label for="username">E-mail or Username</label>
+              <input
+                type="text"
+                name=""
+                placeholder="Enter Username or E-mail"
+                id="username"
+              />
+            </div>
+            <div class="info">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name=""
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <button type="submit" style="cursor: pointer" class="submit">LOGIN</button>
+            <div class="forgot_password">
+              <h3>Forgot Password</h3>
+              <a href="#" class="reset">Reset!</a>
+            </div>
+          </form>
+        </div>
+        <div class="login_2">
+          <div class="login2_overlay">
+            <p>Sign Up</p>
+            <i
+            class="fa-solid fa-arrow-right fa-lg arrow-right"
+            style="color: #ffffff"
+          ></i>
+        </div>
+          <p>User Registration</p>
+          <form action="">
+            <div class="info">
+              <label for="surName">Surname</label>
+              <input
+                type="text"
+                name=""
+                id="surName"
+                placeholder="Enter surname"
+              />
+            </div>
+            <div class="info">
+              <label for="firstName">Firstname</label>
+              <input
+                type="text"
+                name=""
+                id="firstName"
+                placeholder="Enter Firstname"
+              />
+            </div>
+            <div class="info">
+              <label for="Email">E-mail</label>
+              <input type="text" name="" placeholder="Enter Email" id="Email" />
+            </div>
+            <div class="info">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name=""
+                placeholder="Enter Username"
+                id="username"
+              />
+            </div>
+            <div class="info">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="info">
+              <label for="password">Repeat Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="info">
+              <label for="gender">gender</label>
+              <select>
+                <option value="Select gender" disabled selected>
+                  Select Gender
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Prefer Not To Say">Prefer Not To Say</option>
+              </select>
+            </div>
+            <div class="info">
+              <label for="number">Mobile Number</label>
+              <input
+                type="number"
+                name="phone"
+                id="number"
+                placeholder="Enter Mobile Number"
+              />
+            </div>
+            <div class="info address">
+              <label for="address">Address</label>
+              <textarea
+                name="address"
+                id="address"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit" style="cursor: pointer" class="submit">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer2">
+      <p>
+        © Copyright by <span class="span1">Dmart STORE.</span> Design by
+        <span class="span2">Darium Studio.</span>
+      </p>
+      <div class="payments">
+        <a href="" class="payment1"
+          ><img src="../images/paypal.png" alt="payment1"
+        /></a>
+        <a href="" class="payment2"
+          ><img src="../images/master-card.png" alt="payment2"
+        /></a>
+        <a href="" class="payment3"
+          ><img src="../images/visa.png" alt="payment3"
+        /></a>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8d9522dee8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>
