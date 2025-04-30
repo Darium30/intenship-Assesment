@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Dmart Stores</title>
   </head>
   <body>
     <header>
@@ -31,7 +32,7 @@
               <li><a href="">NGR</a></li>
             </div>
             <p>USD</p>
-            <i class="fa-solid fa-angle-down fa-xs" style="color: #000000"></i>
+            <i class="fa-solid fa-angle-down fa-xs" style="color: #d66767"></i>
           </div>
           <div class="language">
             <div class="dropB">
@@ -47,7 +48,7 @@
       </div>
 
       <div class="header_2">
-        <img src="../images/logo.png" alt="logo" style="width: 10%" />
+        <img src="../images/logo.png" alt="logo" class="main_logo"/>
 
         <nav>
           <ul>
@@ -61,19 +62,24 @@
 
         <div class="search_cart">
           <div class="search">
-            <input type="text" placeholder="Search Product" />
-            <i
-              class="fa-solid fa-magnifying-glass fa-sm search_key"
+            <input type="text" placeholder="Search Product" style="font-weight: 500;" />
+           <a href="#" class="search_key" style="display: flex; align-items: center;"> <i
+              class="fa-solid fa-magnifying-glass fa-lg"
               style="color: #000000b6"
             ></i>
+          </a>
           </div>
           <div class="cart">
             <i
-              class="fa-solid fa-cart-shopping fa-lg cart_logo"
+              class="fa-solid fa-cart-shopping fa-lg"
               style="color: #ffffff"
             ></i>
             <h4>0</h4>
           </div>
+        </div>
+
+        <div class="toggle">
+          <i class="fa-solid fa-bars-staggered fa-lg toggle_btn" style="color: #322910;"></i>
         </div>
       </div>
     </header>

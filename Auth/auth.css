@@ -216,7 +216,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.cart:hover {
+.cart:hover { 
   background-color: rgb(126, 99, 12);
 }
 
